@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main {
+    width: 100%;
+    height: 70px;
+
+}
+
+#main header {
+    width: 50%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 25%;
+
+}
+
+#main header a {
+    text-decoration: none;
+    color: orangered;
+    letter-spacing: 2px;
+    font-size: 18px;
+    position: relative;
+}
+
+#main header a::before {
+    width: 0;
+    height: 3px;
+    background-color: #ff0000;
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: .7s;
+}
+
+#main header a:hover::before {
+    width: 100%;
+}
+
+.email {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding:60px 0;
+    background-color: black;
+}
+
+.young {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.young .bir {
+    width: 250px;
+    height: 30px;
+}
+
+.young .ikki {
+    width: 250px;
+    height: 30px;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.subject .one {
+    width: 510px;
+    height: 30px;
+    margin: 10px 10px 5px 10px;
+}
+
+.subject .two {
+    width: 510px;
+    height: 80px;
+    margin: 5px 10px ;
+    
+    text-indent: 10px;
+}
+.btns{
+    width: 510px;
+    height: 34px;
+    padding: 4px;
+    margin: 5px 10px;
+    background-color: red;
+}
+.btns button{
+    width: 502px;
+    height: 26px;
+    font-size: 20px;
+    border: 1px solid white;
+    color: white;
+    background-color: red;
+}
+
+.contact{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.contact .logo{
+    width: 250px;
+    height: 5vh;
+    background-color:red;
+    color: dodgerblue;
+    display: flex;
+    text-align: center;
+    border: 3px solid white;
+align-items: center;
+justify-content: center;
+position: relative;
+top: 100px;
+}
+ .contact .logo i{
+    color: white;
+    
+}

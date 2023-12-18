@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 70px;
+
+}
+
+#main header {
+    width: 50%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 25%;
+
+}
+
+#main header a {
+    text-decoration: none;
+    color: orangered;
+    letter-spacing: 2px;
+    font-size: 18px;
+    position: relative;
+}
+
+#main header a::before {
+    width: 0;
+    height: 3px;
+    background-color: #ff0000;
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: .7s;
+}
+
+#main header a:hover::before {
+    width: 100%;
+}
+
+.matn{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    padding: 50px 140px;
+    gap: 100px ;
+    align-items: center;
+}
+.matn .rasm img{
+    width: 300px;
+height: 300px;
+border-radius: 50%;
+border: 3px solid red;
+filter:brightness(1.5)
+}
+.matn .rasm img:hover{
+    filter: blur(2px);
+}
+.matn .logo p{
+    font-size: 50px;
+    padding: 100px 0;
+    background: -webkit-linear-gradient(red, dodgerblue, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 0 100px;
+}
